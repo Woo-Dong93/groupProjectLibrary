@@ -1,3 +1,4 @@
+var webpack = require('webpack')
 module.exports = {
   output: {
     library: 'MathquillComponent',
@@ -37,41 +38,30 @@ module.exports = {
             '@font-face {\n' +
             '  /* Heavy fonts have been removed */\n' +
             '  font-family: Symbola;\n' +
-            // '  src: url("font/Symbola.woff2") format("woff2"), url("font/Symbola.woff") format("woff");\n' +
-            // '  src: url("font/Symbola.ttf") format("truetype");\n',
             '}',
           flags: 'g',
         },
       },
       {
-        // You can use `regexp`
-        // test: /example\.js/$
-        test: /.*mathquill\/build\/mathquill\.js$/,
-        use: [
-          {
-            loader: 'imports-loader',
-            options: {
-              type: 'commonjs',
-              imports: {
-                syntax: 'single',
-                moduleName: 'jquery',
-                name: '__webpack_jquery',
-              },
-              additionalCode: 'window.jQuery=__webpack_jquery;',
-            },
+        test: require.resolve(
+          './node_modules/@edtr-io/mathquill/build/mathquill.js'
+        ),
+        loader: 'exports-loader',
+        options: {
+          type: 'commonjs',
+          exports: {
+            syntax: 'single',
+            name: 'window.MathQuill',
           },
-          {
-            loader: 'exports-loader',
-            options: {
-              type: 'commonjs',
-              exports: {
-                syntax: 'single',
-                name: 'window.MathQuill',
-              },
-            },
-          },
-        ],
+        },
       },
     ],
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+    }),
+  ],
 }
