@@ -1,0 +1,19 @@
+{
+  "name": "c-15-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Woo-Dong93/groupProjectLibrary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Woo-Dong93/groupProjectLibrary/issues"
+  },
+  "homepage": "https://github.com/Woo-Dong93/groupProjectLibrary#readme"
+}
