@@ -1,4 +1,4 @@
-declare module 'c-15-mathquill' {
+declare module 'react-mathquill' {
   import * as React from 'react'
 
   export function addStyles(): void

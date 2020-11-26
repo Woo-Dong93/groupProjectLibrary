@@ -1,24 +1,18 @@
 {
-  "name": "c-15-mathquill",
-  "version": "1.0.6",
+  "name": "c15-mathquill",
+  "version": "1.0.1",
   "description": "React component wrapper for Mathquill",
   "main": "index.js",
   "typings": "index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Woo-Dong93/groupProjectLibrary.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Woo-Dong93/groupProjectLibrary/issues"
-  },
-  "homepage": "https://github.com/Woo-Dong93/groupProjectLibrary#readme",
+  "repository": "git@github.com:Woo-Dong93/groupProjectLibrary.git",
+  "author": "woodong",
   "license": "MIT",
   "private": false,
   "scripts": {
     "start": "webpack --mode development",
-    "build": "webpack --mode production --output dist/c-15-mathquill.min.js && webpack --mode development --output dist/c-15-mathquill.js",
+    "build": "webpack --mode production --output dist/react-mathquill.min.js && webpack --mode development --output dist/react-mathquill.js",
     "test": "eslint src/ examples/src/",
-    "start:example": "webpack --mode development --watch --output dist/c-15-mathquill.js & webpack-dev-server --config webpack.examples.js --mode development",
+    "start:example": "webpack --mode development --watch --output dist/react-mathquill.js & webpack-dev-server --config webpack.examples.js --mode development",
     "build:example": "npm run build && webpack --mode development --config webpack.examples.js",
     "deploy": "npm run build:example && gh-pages -d examples/dist",
     "prepublish": "rm -rf dist/ && npm run build",
