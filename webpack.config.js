@@ -46,7 +46,7 @@ module.exports = {
       {
         // You can use `regexp`
         // test: /example\.js/$
-        test: /.*library\/build\/mathquill\.js$/,
+        test: /.*mathquill\/build\/mathquill\.js$/,
         use: [
           {
             loader: 'imports-loader',

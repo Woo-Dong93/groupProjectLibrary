@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 // import the styles
-import { addStyles as addMathquillStyles } from '../../dist/c-15-library'
+import { addStyles as addMathquillStyles } from '../../dist/c-15-mathquill'
 
 import EditableMathExample from './EditableMathExample'
 import StaticMathExample from './StaticMathExample'

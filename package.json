@@ -1,6 +1,6 @@
 {
-  "name": "c-15-library",
-  "version": "1.0.5",
+  "name": "c-15-mathquill",
+  "version": "1.0.6",
   "description": "React component wrapper for Mathquill",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -16,9 +16,9 @@
   "private": false,
   "scripts": {
     "start": "webpack --mode development",
-    "build": "webpack --mode production --output dist/c-15-library.min.js && webpack --mode development --output dist/c-15-library.js",
+    "build": "webpack --mode production --output dist/c-15-mathquill.min.js && webpack --mode development --output dist/c-15-mathquill.js",
     "test": "eslint src/ examples/src/",
-    "start:example": "webpack --mode development --watch --output dist/c-15-library.js & webpack-dev-server --config webpack.examples.js --mode development",
+    "start:example": "webpack --mode development --watch --output dist/c-15-mathquill.js & webpack-dev-server --config webpack.examples.js --mode development",
     "build:example": "npm run build && webpack --mode development --config webpack.examples.js",
     "deploy": "npm run build:example && gh-pages -d examples/dist",
     "prepublish": "rm -rf dist/ && npm run build",

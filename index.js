@@ -1,7 +1,7 @@
 'use strict'
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = require('./dist/c-15-library.min.js')
+  module.exports = require('./dist/c-15-mathquill.min.js')
 } else {
-  module.exports = require('./dist/c-15-library.js')
+  module.exports = require('./dist/c-15-mathquill.js')
 }
