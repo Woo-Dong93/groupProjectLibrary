@@ -1,6 +1,6 @@
 {
   "name": "c-15-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component wrapper for Mathquill",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -12,7 +12,6 @@
     "url": "https://github.com/Woo-Dong93/groupProjectLibrary/issues"
   },
   "homepage": "https://github.com/Woo-Dong93/groupProjectLibrary#readme",
-  "author": "viktorstrate <viktorstrate@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
