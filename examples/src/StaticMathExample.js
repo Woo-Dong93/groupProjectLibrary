@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 // import the library
-import { StaticMathField } from '../../dist/react-mathquill'
+import { StaticMathField } from '../../dist/c-15-library'
 
 const firstLatex = 'e=mc^2'
 const secondLatex = '\\frac {\\sqrt{2}} {2\\cdot 2}'

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 // import the library
-import { EditableMathField } from '../../dist/react-mathquill'
+import { EditableMathField } from '../../dist/c-15-library'
 
 const initialLatex =
   '\\cos\\left(A\\right)=\\frac{b^2+c^2-a^2}{2\\cdot b\\cdot c}'
